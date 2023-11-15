@@ -1,0 +1,27 @@
+
+
+div.header{
+    grid-area: header;
+    background-color: aqua;
+}
+div.meny{
+    grid-area: meny;
+    background-color: antiquewhite;
+}
+div.innhold{
+    grid-area: innhold;
+    background-color: azure;
+}
+div.footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
+@media only screen and (max-width:500) {
+    div.page{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 5fr 1fr;
+        grid-template-areas: 'header' 'meny'  'innhold' 'footer';
+    }
+    
+}

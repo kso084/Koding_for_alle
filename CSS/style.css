@@ -1,0 +1,29 @@
+
+
+
+div.meny{
+    grid-area: meny;
+    background-color: lightseagreen;
+}
+div.header{
+    grid-area: header;
+    background-color: lightcoral;
+}
+div.innhold{
+    grid-area: innhold;
+    background-color: lightgray;
+}
+div.footer{
+    grid-area: footer;
+    background-color: blanchedalmond;
+}
+
+div.page{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr;
+    grid-row: 1fr 8fr 1fr;
+    grid-area:  'meny header' 'meny innhold' 'footer footer' ;
+}
+
+
