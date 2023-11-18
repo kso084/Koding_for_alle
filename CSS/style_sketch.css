@@ -4,6 +4,10 @@ div.menu{
     padding-right: 4px;
 }
 
+h2.blueBack{
+    background-color: lightblue;
+}
+
 div.screen{
     border:1px solid grey;
     float: left;

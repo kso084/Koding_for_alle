@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,6 +54,11 @@
 
     </div>
 
+    <h2 onclick="endrePressed();">PRESS HERE!</h2>
+    <h2 id="changeOther">Unpressed</h2>
+    <h2 onclick="addSymbol(); endreFargeBlue();">Press to add More Symbols</h2>
+    <h2 id="addSymbolHeader">Add more to Here:</h2>
+
 
     <div id="innhold">
         Jeg tenger på et tall mellom 1 og 20. Tipp hvilket! <br>
@@ -72,6 +79,27 @@
             `;
         }
 
+        function addSymbol(){
+            document.getElementById("addSymbolHeader").innerHTML+= "&#8377 ";
+        }
+        
+        function endrePressed(){
+            document.getElementById('changeOther').innerHTML= 'Pressed';
+        }
+
+        function endreTekst(){
+            document.getElementById('vinnerTaper').innerHTML = 'Taper er';
+        }
+
+        function endreFargeBlue(){
+            //document.getElementById("addSymbolHeader").style.backgroundColor='red';
+            document.getElementById("addSymbolHeader").classList.toggle('blueBack'); //add og remove
+            }
+
+        function fourAClock(){
+            alert('Tipsy time');
+            alert('At BraseTown, IL')
+        }
     </script>
 
     
